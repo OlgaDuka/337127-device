@@ -6,31 +6,31 @@
   </head>
   <body>
     <header class="header-main container">
-      <div class="logo">Device</div>
-      <ul class="control">
-        <li class="control__item control__search">
-          <form action="" class="form-search">
-            <label for="search" class="form-search__label">Поиск по сайту</label>
-            <input id="search" class="form-search__input" type="search" placeholder="Поиск по сайту">
-            <button class="form-search__btn" type="submit">Найти</button>
-          </form>
-        </li>
-        <li class="control__item control__login">
-          <a class="control__link" href="login.html">Войти</a>
-        </li>
-        <li class="control__item control__compare">
-          <a class="control__link" href="compare.html">Сравнить</a>
-        </li>
-        <li class="control__item control__backet">
-          <a class="control__link" href="backet.html">Корзина</a>
-        </li>
-      </ul>
-      <nav class="menu">
-        <ul>
+      <a class="logo">Device</a>
+      <nav class="menu-main">
+        <ul class="control">
+          <li class="control__item control__search">
+            <form action="" class="form-search">
+              <label for="search" class="form-search__label">Поиск по сайту</label>
+              <input id="search" class="form-search__input" type="search" placeholder="Поиск по сайту">
+              <button class="form-search__btn" type="submit">Найти</button>
+            </form>
+          </li>
+          <li class="control__item control__login">
+            <a class="control__link" href="#">Войти</a>
+          </li>
+          <li class="control__item control__compare">
+            <a class="control__link" href="#">Сравнить</a>
+          </li>
+          <li class="control__item control__backet">
+            <a class="control__link" href="#">Корзина</a>
+          </li>
+        </ul>
+
+        <ul class="menu">
           <li class="menu__item">
             <a href="#">Каталог товаров</a>
-            <nav class="submenu">
-              <ul>
+              <ul class="submenu">
                 <li class="submenu__item">
                   <a class="submenu__link" href="#">Виртуальная реальность</a>
                 </li>
@@ -50,7 +50,6 @@
                   <a class="submenu__link" href="#">Квадрокоптеры</a>
                 </li>
               </ul>
-            </nav>
           </li>
           <li class="menu__item">
             <a class="menu__link" href="#">Доставка</a>
@@ -67,9 +66,9 @@
 
     <main class="content">
       <div class="slider container">
-        <input class="slider__radio-btn" type="radio" name="slide01" id="slide01" checked>
-        <input class="slider__radio-btn" type="radio" name="slide02" id="slide02">
-        <input class="slider__radio-btn" type="radio" name="slide03" id="slide03">
+        <input class="slider__radio-btn" type="radio" name="slide" id="slide01" checked>
+        <input class="slider__radio-btn" type="radio" name="slide" id="slide02">
+        <input class="slider__radio-btn" type="radio" name="slide" id="slide03">
         <div class="slider__controls">
           <label for="slide01" class="slider__control"></label>
           <label for="slide02" class="slider__control"></label>
@@ -136,7 +135,7 @@
       </div>
 
       <section class="popular container">
-        <h2 class="hidden-view">Популярные товары</h2>
+        <h2 class="visually-hidden">Популярные товары</h2>
         <ul class="popular__list">
           <li class="popular__item">
             <a class="popular__link" href="catalog.html">
@@ -178,10 +177,10 @@
       </section>
 
       <section class="services container">
-        <h2 class="hidden-view">Услуги</h2>
-        <input class="services__radio-btn" type="radio" name="switch01" id="switch01" checked>
-        <input class="services__radio-btn" type="radio" name="switch02" id="switch02">
-        <input class="services__radio-btn" type="radio" name="switch03" id="switch03">
+        <h2 class="visually-hidden">Услуги</h2>
+        <input class="services__radio-btn" type="radio" name="switch" id="switch01" checked>
+        <input class="services__radio-btn" type="radio" name="switch" id="switch02">
+        <input class="services__radio-btn" type="radio" name="switch" id="switch03">
         <div class="slider__controls">
           <label for="switch01" class="services__control">Доставка</label>
           <label for="switch02" class="services__control">Гарантия</label>
@@ -205,7 +204,7 @@
       </section>
 
       <section class="logotypes container">
-        <h2 class="hidden-view">Наши партнеры</h2>
+        <h2 class="visually-hidden">Наши партнеры</h2>
         <div class="logotypes__list">
           <a href="" class="logotypes__link">
             <img src="" alt="" class="logotypes__logo" width="" height="">
@@ -279,7 +278,7 @@
 
       <div class="footer__bottom container">
         <section class="social">
-          <h2 class="social__title hidden-view">Ссылки на социальные сети</h2>
+          <h2 class="social__title visually-hidden">Ссылки на социальные сети</h2>
           <a class="social__btn btn-fb" href="#">Фейсбук</a>
           <a class="social__btn btn-insta" href="#">Инстаграмм</a>
           <a class="social__btn btn-tw" href="#">Твиттер</a>
