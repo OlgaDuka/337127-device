@@ -6,32 +6,32 @@
 </head>
 <body>
   <header class="header-main container">
-    <a class="logo">Device</a>
+    <a href="index.html" class="logo">Device</a>
+    <ul class="control">
+      <li class="control__item control__search">
+        <form action="https://echo.htmlacademy.ru" class="form-search">
+          <label for="search" class="form-search__label">Поиск по сайту</label>
+          <input id="search" class="form-search__input" type="search" placeholder="Поиск по сайту">
+          <button class="form-search__btn" type="submit">Найти</button>
+        </form>
+      </li>
+      <li class="control__item control__login">
+        <span class="control__user">Валентин Петухов</span>
+        <a class="control__link" href="#">Выйти</a>
+      </li>
+      <li class="control__item control__compare">
+        <a class="control__link" href="#">Сравнить</a>
+      </li>
+      <li class="control__item control__backet">
+        <a class="control__link" href="#">Корзина</a>
+      </li>
+    </ul>
     <nav class="menu-main">
-      <ul class="control">
-        <li class="control__item control__search">
-          <form action="" class="form-search">
-            <label for="search" class="form-search__label">Поиск по сайту</label>
-            <input id="search" class="form-search__input" type="search" placeholder="Поиск по сайту">
-            <button class="form-search__btn" type="submit">Найти</button>
-          </form>
-        </li>
-        <li class="control__item control__login">
-          <span class="control__user">Валентин Петухов</span>
-          <a class="control__link" href="#">Выйти</a>
-        </li>
-        <li class="control__item control__compare">
-          <a class="control__link" href="#">Сравнить</a>
-        </li>
-        <li class="control__item control__backet">
-          <a class="control__link" href="#">Корзина</a>
-        </li>
-      </ul>
-
-      <ul class="menu">
-        <li class="menu__item">
-          <a href="#">Каталог товаров</a>
-            <ul class="submenu">
+      <ul class="menu-main__list">
+        <li class="menu-main__item">
+          <a class="menu-main__link" href="#">Каталог товаров</a>
+          <div class="submenu">
+            <ul class="submenu__list">
               <li class="submenu__item">
                 <a class="submenu__link" href="#">Виртуальная реальность</a>
               </li>
@@ -41,16 +41,21 @@
               <li class="submenu__item">
                 <a class="submenu__link" href="#">Экшн-камеры</a>
               </li>
+            </ul>
+            <ul class="submenu__list">
               <li class="submenu__item">
                 <a class="submenu__link" href="#">Фитнес-браслеты</a>
               </li>
               <li class="submenu__item">
                 <a class="submenu__link" href="#">Умные часы</a>
               </li>
+            </ul>
+            <ul class="submenu__list">
               <li class="submenu__item">
                 <a class="submenu__link" href="#">Квадрокоптеры</a>
               </li>
             </ul>
+          </div>
         </li>
         <li class="menu__item">
           <a class="menu__link" href="#">Доставка</a>
@@ -101,7 +106,7 @@
           </div>
         </fieldset>
         <fieldset class="filter__color">
-          <ligend class="filter__name">Цвет</legend>
+          <legend class="filter__name">Цвет</legend>
           <ul class="filter__list-options">
             <li class="filter__option">
               <input class="filter__checkbox" type="checkbox" name="black" checked>Черный

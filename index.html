@@ -7,30 +7,30 @@
   <body>
     <header class="header-main container">
       <a class="logo">Device</a>
+      <ul class="control">
+        <li class="control__item control__search">
+          <form action="https://echo.htmlacademy.ru" class="form-search">
+            <label for="search" class="form-search__label">Поиск по сайту</label>
+            <input id="search" class="form-search__input" type="search" placeholder="Поиск по сайту">
+            <button class="form-search__btn" type="submit">Найти</button>
+          </form>
+        </li>
+        <li class="control__item control__login">
+          <a class="control__link" href="#">Войти</a>
+        </li>
+        <li class="control__item control__compare">
+          <a class="control__link" href="#">Сравнить</a>
+        </li>
+        <li class="control__item control__backet">
+          <a class="control__link" href="#">Корзина</a>
+        </li>
+      </ul>
       <nav class="menu-main">
-        <ul class="control">
-          <li class="control__item control__search">
-            <form action="" class="form-search">
-              <label for="search" class="form-search__label">Поиск по сайту</label>
-              <input id="search" class="form-search__input" type="search" placeholder="Поиск по сайту">
-              <button class="form-search__btn" type="submit">Найти</button>
-            </form>
-          </li>
-          <li class="control__item control__login">
-            <a class="control__link" href="#">Войти</a>
-          </li>
-          <li class="control__item control__compare">
-            <a class="control__link" href="#">Сравнить</a>
-          </li>
-          <li class="control__item control__backet">
-            <a class="control__link" href="#">Корзина</a>
-          </li>
-        </ul>
-
-        <ul class="menu">
-          <li class="menu__item">
-            <a href="#">Каталог товаров</a>
-              <ul class="submenu">
+        <ul class="menu-main__list">
+          <li class="menu-main__item">
+            <a class="menu-main__link" href="#">Каталог товаров</a>
+            <div class="submenu">
+              <ul class="submenu__list">
                 <li class="submenu__item">
                   <a class="submenu__link" href="#">Виртуальная реальность</a>
                 </li>
@@ -40,16 +40,21 @@
                 <li class="submenu__item">
                   <a class="submenu__link" href="#">Экшн-камеры</a>
                 </li>
+              </ul>
+              <ul class="submenu__list">
                 <li class="submenu__item">
                   <a class="submenu__link" href="#">Фитнес-браслеты</a>
                 </li>
                 <li class="submenu__item">
                   <a class="submenu__link" href="#">Умные часы</a>
                 </li>
+              </ul>
+              <ul class="submenu__list">
                 <li class="submenu__item">
                   <a class="submenu__link" href="#">Квадрокоптеры</a>
                 </li>
               </ul>
+            </div>
           </li>
           <li class="menu__item">
             <a class="menu__link" href="#">Доставка</a>
@@ -81,20 +86,18 @@
           <p class="slide__description">Самая длинная палка для селфи доступна в нашем магазине.</p>
           <p class="slide__description">Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.</p>
           <a class="slide__btn btn" href="#">Подробнее</a>
-          <ul class="slide__parameters-list">
-            <li class="slide__parameters-item">
-              <span class="slide__parameter-feature">8,5 м</span>
-              <span class="slide__parameter-description">Длина палки</span>
-            </li>
-            <li class="slide__parameters-item">
-              <span class="slide__parameter-feature">5 кг</span>
-              <span class="slide__parameter-description">Вес палки</span>
-            </li>
-            <li class="slide__parameters-item">
-              <span class="slide__parameter-feature">Карбон</span>
-              <span class="slide__parameter-description">Материал</span>
-            </li>
-          </ul>
+          <table class="slide__parameters">
+            <tr class="slide__parameters-str">
+              <td class="slide__parameter-feature">8,5 м</td>
+              <td class="slide__parameter-feature">5 кг</td>
+              <td class="slide__parameter-feature">Карбон</td>
+            </tr>
+            <tr class="slide__parameters-str">
+              <td class="slide__parameter-description">Длина палки</td>
+              <td class="slide__parameter-description">Вес палки</td>
+              <td class="slide__parameter-description">Материал</td>
+            </tr>
+          </table>
         </div>
 
         <div class="slider__item slide">
@@ -139,37 +142,37 @@
         <ul class="popular__list">
           <li class="popular__item">
             <a class="popular__link" href="catalog.html">
-              <img src="" alt="Виртуальная реальность" class="popular__img" width="" height=""></img>
+              <img src="" alt="Виртуальная реальность" class="popular__img" width="" height="">
               <span class="popular__name">Виртуальная реальность</span>
             </a>
           </li>
           <li class="popular__item">
             <a class="popular__link" href="catalog.html">
-              <img src="" alt="Моноподы для селфи" class="popular__img" width="" height=""></img>
+              <img src="" alt="Моноподы для селфи" class="popular__img" width="" height="">
               <span class="popular__name">Моноподы для селфи</span>
             </a>
           </li>
           <li class="popular__item">
             <a class="popular__link" href="catalog.html">
-              <img src="" alt="Экшн-камеры" class="popular__img" width="" height=""></img>
+              <img src="" alt="Экшн-камеры" class="popular__img" width="" height="">
               <span class="popular__name">Экшн-камеры</span>
             </a>
           </li>
           <li class="popular__item">
             <a class="popular__link" href="catalog.html">
-              <img src="" alt="Фитнес-браслеты" class="popular__img" width="" height=""></img>
+              <img src="" alt="Фитнес-браслеты" class="popular__img" width="" height="">
               <span class="popular__name">Фитнес-браслеты</span>
             </a>
           </li>
           <li class="popular__item">
             <a class="popular__link" href="catalog.html">
-              <img src="" alt="Умные часы" class="popular__img" width="" height=""></img>
+              <img src="" alt="Умные часы" class="popular__img" width="" height="">
               <span class="popular__name">Умные часы</span>
             </a>
           </li>
           <li class="popular__item">
             <a class="popular__link" href="catalog.html">
-              <img src="" alt="Квадрокоптеры" class="popular__img" width="" height=""></img>
+              <img src="" alt="Квадрокоптеры" class="popular__img" width="" height="">
               <span class="popular__name">Квадрокоптеры</span>
             </a>
           </li>
@@ -290,7 +293,7 @@
     <div class="modal wrapper">
       <button class="modal__close" type="button">Закрыть</button>
       <form class="modal__form feedback" action="https://echo.htmlacademy.ru" method="post">
-        <div class="feedback__inline"></div>
+        <div class="feedback__inline">
           <label for="username" class="feedback__label">Ваше имя:</label>
           <input type="text" class="feedback__field" name="username" id="username" placeholder="Представьтесь, пожалуйста">
           <label for="useremail" class="feedback__label">Ваш e-mail:</label>
