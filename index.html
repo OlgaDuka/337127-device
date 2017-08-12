@@ -3,6 +3,8 @@
   <head>
     <meta charset="utf-8">
     <title>Девайс</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
     <header class="header-main container">
@@ -106,12 +108,14 @@
           <p class="slide__description">Мотивирующие фитнес-браслеты помогут найти в себе силы</p>
           <p class="slide__description">не пропускать занятия и соблюдать диету.</p>
           <a class="slide__btn btn" href="#">Подробнее</a>
-          <ul class="slide__parameters-list">
-            <li class="slide__parameters-item">
-              <span class="slide__parameter-option">48 часов</span>
-              <span class="slide__parameter-description">Без подзарядки</span>
-            </li>
-          </ul>
+          <table class="slide__parameters">
+            <tr class="slide__parameters-str">
+              <td class="slide__parameter-feature">48 часов</td>
+            </tr>
+            <tr class="slide__parameters-str">
+              <td class="slide__parameter-description">Без подзарядки</td>
+            </tr>
+          </table>
         </div>
 
         <div class="slider__item slide">
@@ -120,20 +124,18 @@
           <p class="slide__description">Этот обычный, на первый взгляд, квадрокоптер оснащен</p>
           <p class="slide__description">мощным лазером, замаскированным под стандартную камеру.</p>
           <a class="slide__btn btn" href="#">Подробнее</a>
-          <ul class="slide__parameters-list">
-            <li class="slide__parameters-item">
-              <span class="slide__parameter-feature">800 м</span>
-              <span class="slide__parameter-description">Дальность полета</span>
-            </li>
-            <li class="slide__parameters-item">
-              <span class="slide__parameter-feature">50 м</span>
-              <span class="slide__parameter-description">Радиус поражения</span>
-            </li>
-            <li class="slide__parameters-item">
-              <span class="slide__parameter-feature">Карбон</span>
-              <span class="slide__parameter-description">Материал</span>
-            </li>
-          </ul>
+          <table class="slide__parameters">
+            <tr class="slide__parameters-str">
+              <td class="slide__parameter-feature">800 м</td>
+              <td class="slide__parameter-feature">50 м</td>
+              <td class="slide__parameter-feature">Карбон</td>
+            </tr>
+            <tr class="slide__parameters-str">
+              <td class="slide__parameter-description">Дальность полета</td>
+              <td class="slide__parameter-description">Радиус поражения</td>
+              <td class="slide__parameter-description">Материал</td>
+            </tr>
+          </table>
         </div>
       </div>
 
@@ -142,37 +144,37 @@
         <ul class="popular__list">
           <li class="popular__item">
             <a class="popular__link" href="catalog.html">
-              <img src="" alt="Виртуальная реальность" class="popular__img" width="" height="">
+              <img src="img/popular1.png" alt="Виртуальная реальность" class="popular__img" width="97" height="55">
               <span class="popular__name">Виртуальная реальность</span>
             </a>
           </li>
           <li class="popular__item">
             <a class="popular__link" href="catalog.html">
-              <img src="" alt="Моноподы для селфи" class="popular__img" width="" height="">
+              <img src="img/popular2.png" alt="Моноподы для селфи" class="popular__img" width="86" height="117">
               <span class="popular__name">Моноподы для селфи</span>
             </a>
           </li>
           <li class="popular__item">
             <a class="popular__link" href="catalog.html">
-              <img src="" alt="Экшн-камеры" class="popular__img" width="" height="">
+              <img src="img/popular3.png" alt="Экшн-камеры" class="popular__img" width="71" height="87">
               <span class="popular__name">Экшн-камеры</span>
             </a>
           </li>
           <li class="popular__item">
             <a class="popular__link" href="catalog.html">
-              <img src="" alt="Фитнес-браслеты" class="popular__img" width="" height="">
+              <img src="img/popular4.png" alt="Фитнес-браслеты" class="popular__img" width="104" height="65">
               <span class="popular__name">Фитнес-браслеты</span>
             </a>
           </li>
           <li class="popular__item">
             <a class="popular__link" href="catalog.html">
-              <img src="" alt="Умные часы" class="popular__img" width="" height="">
+              <img src="img/popular5.png" alt="Умные часы" class="popular__img" width="56" height="98">
               <span class="popular__name">Умные часы</span>
             </a>
           </li>
           <li class="popular__item">
             <a class="popular__link" href="catalog.html">
-              <img src="" alt="Квадрокоптеры" class="popular__img" width="" height="">
+              <img src="img/popular6.png" alt="Квадрокоптеры" class="popular__img" width="132" height="69">
               <span class="popular__name">Квадрокоптеры</span>
             </a>
           </li>
@@ -210,16 +212,16 @@
         <h2 class="visually-hidden">Наши партнеры</h2>
         <div class="logotypes__list">
           <a href="" class="logotypes__link">
-            <img src="" alt="" class="logotypes__logo" width="" height="">
+            <img src="img/logo1.jpg" alt="" class="logotypes__logo" width="260" height="100">
           </a>
           <a href="" class="logotypes__link">
-            <img src="" alt="" class="logotypes__logo" width="" height="">
+            <img src="img/logo2.jpg" alt="" class="logotypes__logo" width="260" height="100">
           </a>
           <a href="" class="logotypes__link">
-            <img src="" alt="" class="logotypes__logo" width="" height="">
+            <img src="img/logo3.jpg" alt="" class="logotypes__logo" width="260" height="100">
           </a>
           <a href="" class="logotypes__link">
-            <img src="" alt="" class="logotypes__logo" width="" height="">
+            <img src="img/logo4.jpg" alt="" class="logotypes__logo" width="260" height="100">
           </a>
         </div>
       </section>
@@ -239,7 +241,7 @@
         <section class="contacts">
           <h2 class="contacts__title">Контакты</h2>
           <p class="contacts__text">Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете проверить работоспособность покупки. Всякое бывает.</p>
-          <a class="contacts__map" href=""><img src="" alt="Адрес на карте" width="" height=""></a>
+          <a class="contacts__map" href=""><img src="img/map.jpg" alt="Адрес на карте" width="560" height="222"></a>
           <a class="contacts__btn btn" href="feedback.html">Напишите нам</a>
         </section>
       </div>
