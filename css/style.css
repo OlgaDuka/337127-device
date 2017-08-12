@@ -25,3 +25,180 @@
   src: url("../fonts/opensanslight.woff2") format("woff2"),
        url("../fonts/opensanslight.woff") format("woff");
 }
+
+html,
+body {
+  min-width: 1200px;
+  margin: 0;
+  padding: 0;
+  background-color: #f2f2f2;
+}
+
+body, button, input {
+  font-family: "Open Sans", "Arial", sans-serif;
+  color: #000000;
+  font-weight: lighter;
+}
+
+img {
+  max-width: 100%;
+}
+
+::-moz-selection {
+color: #FFFFFF;
+background-color: #81B3D2;
+}
+
+.container {
+  width: 1160px;
+  margin: 0 auto;
+  padding-top: 20px;
+  background-color: #ffffff;
+}
+
+.visually-hidden {
+  font-size: 0;
+}
+
+.btn {
+    display: inline-block;
+    vertical-align: middle;
+    color: #000;
+    font-family: "Gilroy", "Arial", sans-serif;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 20px;
+    text-transform: uppercase;
+    text-decoration: none;
+    text-align: center;
+    border: none;
+    background-color: transparent;
+    background-image: linear-gradient(to bottom,
+                      transparent 0,
+                      transparent 16px,
+                      #F0C52E 17px,
+                      #F0C52E 24px,
+                      transparent 25px,
+                      transparent 40px);
+
+    padding: 10px 40px;
+}
+
+.btn:hover {
+  background-color: #F0C52E;
+}
+
+.btn:active {
+  color: rgba(0, 0, 0, 0.3);
+}
+
+/* Heder */
+
+.header-main {
+  width: 1160px;
+  height: 328px;
+  position: relative;
+  margin: 15px auto;
+  background: transparent;
+  background-image: linear-gradient(to bottom,
+                    transparent 0,
+                    transparent 28px,
+                    #F7E296 29px,
+                    #F7E296 328px);
+  }
+
+.logo {
+  position: absolute;
+  top: 0;
+  left: 60px;
+  font-family: "Gilroy", "Arial", sans-serif;
+  font-weight: bold;
+  font-size: 48px;
+  text-transform: uppercase;
+}
+
+.control {
+  display: flex;
+  margin-top: 50px;
+  padding: 0 60px;
+  justify-content: space-between;
+}
+
+.control__item,
+.menu-main__item,
+.submenu__item {
+  list-style: none;
+}
+
+.control__search {
+  width: 440px;
+  margin-right: 100px;
+  position: relative;
+}
+
+.control__login {
+  width: 230px;
+}
+
+.form-search__input {
+  width: 320px;
+  height: 45px;
+  padding-left: 35px;
+  font-size: 15px;
+  line-height: 36px;
+  color: rgba(0, 0, 0, 0.3);
+  background-color: #F7E296;
+  border: none;
+
+}
+
+.form-search__label {
+  position: relative;
+}
+
+.form-search__label::before {
+  content: "";
+  position: absolute;
+  top: -12px;
+  left: 0;
+  width: 16px;
+  height: 16px;
+  background-image: url("../img/search.png");
+  background-repeat: no-repeat;
+
+}
+
+.form-search__btn {
+  width: 84px;
+  height: 47px;
+  margin-left: -4px;
+  color: #F7E296;
+  border: none;
+  background-color: #F7E296;
+  cursor: none;
+}
+
+.form-search__input:focus {
+  border-bottom: 2px solid #000;
+  color: #000;
+}
+
+.form-search__input:focus + .form-search__btn {
+  color: #000;
+  border: 2px solid #000;
+  cursor: pointer;
+}
+
+.form-search__input:focus + .form-search__btn:hover {
+  color: #fff;
+  background-color: #000;
+}
+
+.form-search__input:focus + .form-search__btn:active {
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.control__link {
+  text-decoration: none;
+  color: #000;
+}
