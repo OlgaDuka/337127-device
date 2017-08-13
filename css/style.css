@@ -96,15 +96,15 @@ background-color: #81B3D2;
 
 .header-main {
   width: 1160px;
-  height: 328px;
+  height: 308px;
   position: relative;
-  margin: 15px auto;
+  margin: 12px auto;
   background: transparent;
   background-image: linear-gradient(to bottom,
                     transparent 0,
                     transparent 28px,
                     #F7E296 29px,
-                    #F7E296 328px);
+                    #F7E296 308px);
   }
 
 .logo {
@@ -117,11 +117,16 @@ background-color: #81B3D2;
   text-transform: uppercase;
 }
 
-.control {
+.control, .menu-main__list {
   display: flex;
-  margin-top: 50px;
+  margin-top: 40px;
   padding: 0 60px;
   justify-content: space-between;
+  align-items: center;
+}
+
+.submenu {
+  display: none;
 }
 
 .control__item,
@@ -132,12 +137,12 @@ background-color: #81B3D2;
 
 .control__search {
   width: 440px;
-  margin-right: 100px;
+  margin-right: 60px;
   position: relative;
 }
 
 .control__login {
-  width: 230px;
+  width: 208px;
 }
 
 .form-search__input {
@@ -160,12 +165,12 @@ background-color: #81B3D2;
   content: "";
   position: absolute;
   top: -12px;
-  left: 0;
+  left: 4px;
   width: 16px;
   height: 16px;
-  background-image: url("../img/search.png");
+  background-image: url("../img/sprite.png");
   background-repeat: no-repeat;
-
+  background-position: -5px -472px;
 }
 
 .form-search__btn {
@@ -201,4 +206,61 @@ background-color: #81B3D2;
 .control__link {
   text-decoration: none;
   color: #000;
+}
+
+.control__item {
+  padding-left: 22px;
+  position: relative;
+}
+
+.control__search {
+  padding-left: 0;
+}
+
+.control__item::before {
+  content: "";
+  position: absolute;
+  top: 4px;
+  left: 0;
+  background-image: url("../img/sprite.png");
+  background-repeat: no-repeat;
+}
+
+.control__login::before {
+  width: 13px;
+  height: 12px;
+  background-position: -5px -540px;
+}
+
+.control__compare::before {
+  width: 10px;
+  height: 10px;
+  background-position: -5px -115px;
+}
+
+.control__backet::before {
+  width: 12px;
+  height: 12px;
+  background-position: -5px -5px;
+}
+
+.menu-main__list {
+  margin-top: 35px;
+}
+
+.menu-main__item {
+  font-family: "Gilroy", "Arial", sans-serif;
+  font-weight: bold;
+  font-size: 18px;
+  text-transform: uppercase;
+  letter-spacing: 3.5px;
+}
+
+.menu-main__item:first-child {
+  width: 540px;
+}
+
+.menu-main__link {
+  color: #000;
+  text-decoration: none;
 }
