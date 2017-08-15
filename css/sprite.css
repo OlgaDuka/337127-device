@@ -1,0 +1,125 @@
+.sprite {
+    background-image: url(spritesheet.png);
+    background-repeat: no-repeat;
+    display: block;
+}
+
+.sprite-cart {
+    width: 12px;
+    height: 12px;
+    background-position: -5px -5px;
+}
+
+.sprite-cart_f {
+    width: 12px;
+    height: 12px;
+    background-position: -5px -27px;
+}
+
+.sprite-checkbox-off {
+    width: 23px;
+    height: 23px;
+    background-position: -5px -49px;
+}
+
+.sprite-checkbox-on {
+    width: 27px;
+    height: 23px;
+    background-position: -5px -82px;
+}
+
+.sprite-compare {
+    width: 10px;
+    height: 10px;
+    background-position: -5px -115px;
+}
+
+.sprite-compare_f {
+    width: 10px;
+    height: 10px;
+    background-position: -5px -135px;
+}
+
+.sprite-fb {
+    width: 32px;
+    height: 32px;
+    background-position: -5px -155px;
+}
+
+.sprite-filter-button {
+    width: 20px;
+    height: 22px;
+    background-position: -5px -197px;
+}
+
+.sprite-filter-button_aktive {
+    width: 22px;
+    height: 24px;
+    background-position: -5px -229px;
+}
+
+.sprite-icon-down {
+    width: 17px;
+    height: 16px;
+    background-position: -5px -263px;
+}
+
+.sprite-icon-up {
+    width: 17px;
+    height: 16px;
+    background-position: -5px -289px;
+}
+
+.sprite-insta {
+    width: 32px;
+    height: 32px;
+    background-position: -5px -315px;
+}
+
+.sprite-logo-html {
+    width: 27px;
+    height: 35px;
+    background-position: -5px -357px;
+}
+
+.sprite-plus {
+    width: 16px;
+    height: 16px;
+    background-position: -5px -402px;
+}
+
+.sprite-radio-off {
+    width: 25px;
+    height: 25px;
+    background-position: -5px -428px;
+}
+
+.sprite-radio-on {
+    width: 25px;
+    height: 25px;
+    background-position: -5px -463px;
+}
+
+.sprite-search {
+    width: 16px;
+    height: 16px;
+    background-position: -5px -498px;
+}
+
+.sprite-tw {
+    width: 32px;
+    height: 32px;
+    background-position: -5px -524px;
+}
+
+.sprite-user {
+    width: 13px;
+    height: 12px;
+    background-position: -5px -566px;
+}
+
+.sprite-user_f {
+    width: 13px;
+    height: 12px;
+    background-position: -5px -588px;
+}
