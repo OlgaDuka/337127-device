@@ -17,15 +17,17 @@
           <button class="form-search__btn" type="submit">Найти</button>
         </form>
       </li>
-      <li class="control__item control__login">
-        <span class="control__user">Валентин Петухов</span>
-        <a class="control__link" href="#">Выйти</a>
+      <li class="control__item control__profile">
+        <a class="control__link" href="profile.html">Валентин Петухов</a>
+      </li>
+      <li class="control__item control__logout">
+        <a class="control__link" href="logout.html">Выйти</a>
       </li>
       <li class="control__item control__compare">
-        <a class="control__link" href="#">Сравнить</a>
+        <a class="control__link" href="compare.html">Сравнить</a>
       </li>
       <li class="control__item control__backet">
-        <a class="control__link" href="#">Корзина</a>
+        <a class="control__link" href="backet.html">Корзина</a>
       </li>
     </ul>
     <nav class="menu-main">
@@ -199,11 +201,11 @@
         </ul>
         <div class="pagination container">
           <ul class="pagination__list">
-            <li class="pagination__item"><a href="#">Назад</a></li>
-            <li class="pagination__item pagination__item-current"><a>1</a></li>
-            <li class="pagination__item "><a href="#">2</a></li>
-            <li class="pagination__item"><a href="#">3</a></li>
-            <li class="pagination__item"><a href="#">Вперед</a></li>
+            <li class="pagination__item pagination__item--prev"><button type="button">Назад</button></li>
+            <li class="pagination__item pagination__item-current"><button type="button">1</button></li>
+            <li class="pagination__item"><button type="button">2</button></li>
+            <li class="pagination__item"><button type="button">3</button></li>
+            <li class="pagination__item pagination__item--next"><button type="button">Вперед</button></li>
           </ul>
         </div>
       </section>

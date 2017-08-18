@@ -19,7 +19,7 @@
             </form>
           </li>
           <li class="control__item control__login">
-            <a class="control__link" href="#">Войти</a>
+            <a class="control__link" href="login.html">Войти</a>
           </li>
           <li class="control__item control__compare">
             <a class="control__link" href="#">Сравнить</a>
@@ -130,9 +130,9 @@
           </div>
 
           <div class="slider__controls">
-            <label for="btn-slide1" class="slider__control"></label>
-            <label for="btn-slide2" class="slider__control"></label>
-            <label for="btn-slide3" class="slider__control"></label>
+            <label for="btn-slide1" class="slider__control visually-hidden" tabindex="0">Первый слайд</label>
+            <label for="btn-slide2" class="slider__control visually-hidden" tabindex="0">Второй слайд</label>
+            <label for="btn-slide3" class="slider__control visually-hidden" tabindex="0">Третий слайд</label>
           </div>
         </div>
       </header>
@@ -201,9 +201,9 @@
             <input class="services__radio-btn" type="radio" name="switch" id="switch03">
 
             <div class="services__controls">
-              <label for="switch01" class="services__control btn">Доставка</label>
-              <label for="switch02" class="services__control btn">Гарантия</label>
-              <label for="switch03" class="services__control btn">Кредит</label>
+              <label for="switch01" class="services__control btn" tabindex="0">Доставка</label>
+              <label for="switch02" class="services__control btn" tabindex="0">Гарантия</label>
+              <label for="switch03" class="services__control btn" tabindex="0">Кредит</label>
             </div>
 
             <div class="services__list">
@@ -223,31 +223,15 @@
           </div>
         </section>
 
-        <section class="logotypes">
-          <h2 class="visually-hidden">Наши партнеры</h2>
-          <div class="logotypes__list">
-            <a href="" class="logotypes__link">
-              <div class="logotypes__color logotypes__color--logo1">
-                <div class="logotypes__nocolor logotypes__nocolor--logo1"></div>
-              </div>
-            </a>
-            <a href="" class="logotypes__link">
-              <div class="logotypes__color logotypes__color--logo2">
-                <div class="logotypes__nocolor logotypes__nocolor--logo2"></div>
-              </div>
-            </a>
-            <a href="" class="logotypes__link">
-              <div class="logotypes__color logotypes__color--logo3">
-                <div class="logotypes__nocolor logotypes__nocolor--logo3"></div>
-              </div>
-            </a>
-            <a href="" class="logotypes__link">
-              <div class="logotypes__color logotypes__color--logo4">
-                <div class="logotypes__nocolor logotypes__nocolor--logo4"></div>
-              </div>
-            </a>
-          </div>
-        </section>
+        <section class="logotypes container">
+        <h2 class="visually-hidden">Наши партнеры</h2>
+        <div class="logotypes__list">
+          <a class="logotypes__link" href="http://www.dji.com"><img src="img/logo1.jpg" alt="DJI" width="260" height="100"></a>
+          <a class="logotypes__link" href="https://www.sp-gadgets.com"><img src="img/logo2.jpg" alt="SP Gadjets" width="260" height="100"></a>
+          <a class="logotypes__link" href="https://gopro.com" class="logotypes__link"><img src="img/logo3.jpg" alt="GoPro" width="260" height="100"></a>
+          <a class="logotypes__link" href="https://www.vive.com" class="logotypes__link"><img src="img/logo4.jpg" alt="VIVE" width="260" height="100"></a>
+        </div>
+      </section>
 
         <div class="info">
           <section class="about">
@@ -259,12 +243,12 @@
               <li class="about__carrier-item">Автотрейдинг</li>
               <li class="about__carrier-item">ЖелДорЭкспедиция</li>
             </ul>
-            <a href="#" class="about__btn btn">Подробнее о нас</a>
+            <a href="about.html" class="about__btn btn">Подробнее о нас</a>
           </section>
           <section class="contacts">
             <h2 class="contacts__title site-title">Контакты</h2>
             <p class="contacts__text site-text">Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете проверить работоспособность покупки. Всякое бывает.</p>
-            <a class="contacts__map" href=""><img src="img/map.jpg" alt="Адрес на карте" width="560" height="222"></a>
+            <a class="contacts__map" href="#"><img src="img/map.jpg" alt="Адрес на карте: г. Москва, ул. Строителей, 15" width="560" height="222"></a>
             <a class="contacts__btn btn" href="feedback.html">Напишите нам</a>
           </section>
         </div>
@@ -274,14 +258,14 @@
         <div class="footer__top container">
           <a class="footer__logo" href="index.html">Device</a>
           <ul class="control control--footer">
-            <li class="control__item control__login">
-              <a class="control__link" href="#">Войти</a>
+            <li class="control__item control__login--footer">
+              <a class="control__link" href="login.html">Войти</a>
             </li>
-            <li class="control__item control__compare">
-              <a class="control__link" href="#">Сравнить</a>
+            <li class="control__item control__compare--footer">
+              <a class="control__link" href="compare.html">Сравнить</a>
             </li>
-            <li class="control__item control__backet">
-              <a class="control__link" href="#">Корзина</a>
+            <li class="control__item control__backet--footer">
+              <a class="control__link" href="backet.html">Корзина</a>
             </li>
           </ul>
         </div>
@@ -291,13 +275,13 @@
           <nav class="menu menu--footer">
             <ul class="menu__list">
               <li class="menu__item">
-                <a class="menu__link" href="#">Доставка</a>
+                <a class="menu__link" href="delivery.html">Доставка</a>
               </li>
               <li class="menu__item">
-                <a class="menu__link" href="#">Гарантия</a>
+                <a class="menu__link" href="warranty.html#">Гарантия</a>
               </li>
               <li class="menu__item">
-                <a class="menu__link" href="#">Контакты</a>
+                <a class="menu__link" href="contacts.html">Контакты</a>
               </li>
             </ul>
           </nav>
@@ -307,14 +291,18 @@
         <div class="footer__bottom container">
           <section class="social">
             <h2 class="social__title visually-hidden">Ссылки на социальные сети</h2>
-            <a class="social__btn btn-fb" href="#">Фейсбук</a>
-            <a class="social__btn btn-insta" href="#">Инстаграмм</a>
-            <a class="social__btn btn-tw" href="#">Твиттер</a>
+            <a class="social__btn btn-fb visually-hidden" href="#">Фейсбук</a>
+            <a class="social__btn btn-insta visually-hidden" href="#">Инстаграмм</a>
+            <a class="social__btn btn-tw visually-hidden" href="#">Твиттер</a>
           </section>
-          <a class="footer__copyright" href="https://htmlacademy.ru/intensive/htmlcss">HTML Академия</a>
+          <a class="footer__copyright visually-hidden" href="https://htmlacademy.ru/intensive/htmlcss">HTML Академия</a>
         </div>
       </footer>
 
+      <div class="modal map">
+        <button class="modal__close" type="button">Закрыть</button>
+        <iframe src="" frameborder="0"></iframe>
+      </div>
       <div class="modal wrapper">
         <button class="modal__close" type="button">Закрыть</button>
         <form class="modal__form feedback" action="https://echo.htmlacademy.ru" method="post">
