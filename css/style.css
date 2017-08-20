@@ -837,7 +837,6 @@ img {
 
 .footer {
   width: 100%;
-  margin-top: 70px;
   background-color: #464646;
 }
 
@@ -1377,7 +1376,8 @@ img {
   height: 7px;
   border-left: 4px solid #000;
   border-bottom: 4px solid #000;
-  box-shadow: 2px 2px 0 0 #EBEBEB;
+  box-shadow: 0 2px 0 0 #EBEBEB,
+              inset 0 -2px 0 0 #EBEBEB;
   transform: rotate(-45deg);
 }
 
@@ -1409,3 +1409,36 @@ img {
 }
 
 /* paginator */
+
+.pagination {
+  height: 70px;
+  margin-bottom: 70px;
+  background-color: #EBEBEB;
+}
+
+.pagination__list {
+  padding: 10px 30px;
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.pagination__item button {
+  border: none;
+  font-family: "Gilroy", "Arial", sans-serif;
+  font-weight: bold;
+  font-size: 16px;
+  text-transform: uppercase;
+  letter-spacing: 3.5px;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.pagination__item--prev {
+  margin-right: 180px;
+}
+
+.pagination__item--next {
+  margin-left: 180px;
+}
