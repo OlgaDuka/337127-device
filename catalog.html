@@ -98,34 +98,27 @@
         </fieldset>
         <fieldset class="filter__color">
           <legend class="filter__name">Цвет</legend>
-          <ul class="filter__list-options">
-            <li class="filter__option">
-              <input class="filter__checkbox" type="checkbox" name="black" checked>Черный
-            </li>
-            <li class="filter__option">
-              <input class="filter__checkbox" type="checkbox" name="white">Белый
-            </li>
-            <li class="filter__option">
-              <input class="filter__checkbox" type="checkbox" name="blue" checked>Синий
-            </li>
-            <li class="filter__option">
-              <input class="filter__checkbox" type="checkbox" name="red" checked>Красный
-            </li>
-            <li class="filter__option">
-              <input class="filter__checkbox" type="checkbox" name="rose">Розовый
-            </li>
-          </ul>
+          <div class="filter__list-options">
+            <input class="filter__checkbox" type="checkbox" id="black" name="black" checked>
+            <label for="black" class="filter__option">Черный</label>
+            <input class="filter__checkbox" type="checkbox" id="white" name="white">
+            <label for="white" class="filter__option">Белый</label>
+            <input class="filter__checkbox" type="checkbox" id="blue" name="blue" checked>
+            <label for="blue" class="filter__option">Синий</label>
+            <input class="filter__checkbox" type="checkbox" id="red" name="red" checked>
+            <label for="red" class="filter__option">Красный</label>
+            <input class="filter__checkbox" type="checkbox" id="rose" name="rose">
+            <label for="rose" class="filter__option">Розовый</label>
+          </div>
         </fieldset>
         <fieldset class="filter__bluetooth">
           <legend class="filter__name">Bluetooth</legend>
-          <ul class="filter__list-options">
-            <li class="filter__option">
-              <input class="filter__radio" type="radio" name="bt" checked>Есть
-            </li>
-            <li class="filter__option">
-              <input class="filter__radio" type="radio" name="bt">Нет
-            </li>
-          </ul>
+          <div class="filter__list-options">
+            <input class="filter__radio" type="radio" id="bt-y" name="bt" checked>
+            <label for="bt-y" class="filter__option">Есть</label>
+            <input class="filter__radio" type="radio" id="bt-n" name="bt">
+            <label for="bt-n" class="filter__option">Нет</label>
+          </div>
         </fieldset>
         <button class="filter__btn btn" type="submit">Показать</button>
       </form>
