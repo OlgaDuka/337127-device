@@ -16,7 +16,7 @@ link.addEventListener("click", function(event) {
     userName.value = storage;
     email.focus();
     } else {
-    username.focus();
+    userName.focus();
   }
 });
 
@@ -37,13 +37,13 @@ mapClose.addEventListener("click", function(event) {
 });
 
 form.addEventListener("submit", function(event) {
-  if (!username.value || !email.value) {
+  if (!userName.value || !email.value) {
     event.preventDefault();
     popup.classList.remove("feedback--error");
     popup.offsetWidth = popup.offsetWidth;
     popup.classList.add("feedback--error");
   } else {
-    localStorage.setItem("username", username.value);
+    localStorage.setItem("username", userName.value);
   }
 });
 
