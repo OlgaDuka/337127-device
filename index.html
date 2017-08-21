@@ -296,18 +296,20 @@
         </div>
       </footer>
 
-      <div class="modal">
-        <button class="modal__close" type="button">Закрыть</button>
+      <div class="map">
+        <button class="map__close" type="button">Закрыть</button>
         <iframe src="https://yandex.ru/map-widget/v1/-/CBUeRWuUsD" width="960" height="560"></iframe>
       </div>
-      <div class="modal modal--feedback">
-        <button class="modal__close" type="button">Закрыть</button>
-        <form class="feedback" action="https://echo.htmlacademy.ru" method="post">
+      <div class="feedback">
+        <button class="feedback__close" type="button">Закрыть</button>
+        <form class="feedback__form" action="https://echo.htmlacademy.ru" method="post">
           <div class="feedback__inline">
-            <label for="username" class="feedback__label">Ваше имя:</label>
-            <input type="text" class="feedback__field" name="username" id="username" placeholder="Представьтесь, пожалуйста">
-            <label for="useremail" class="feedback__label">Ваш e-mail:</label>
-            <input type="email" class="feedback__field" name="useremail" id="useremail" placeholder="Для отправки ответа">
+            <label class="feedback__label">Ваше имя:
+              <input type="text" class="feedback__field" name="username" placeholder="Представьтесь, пожалуйста">
+            </label>
+            <label class="feedback__label">Ваш e-mail:
+              <input type="email" class="feedback__field" name="useremail" placeholder="Для отправки ответа">
+            </label>
           </div>
           <label for="letter" class="feedback__label">Текст письма:</label>
           <textarea class="feedback__letter" name="letter" id="letter" cols="25" rows="7" placeholder="В свободной форме"></textarea>
@@ -315,7 +317,7 @@
         </form>
       </div>
 
-<!--      <script src="js/popup-form.js"></script> !-->
+      <script src="js/popup-form.js"></script>
     </div>
   </body>
 
