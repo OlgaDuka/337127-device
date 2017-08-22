@@ -86,8 +86,9 @@ img {
 }
 
 .btn {
+    position: relative;
     display: inline-block;
-    vertical-align: middle;
+    vertical-align: top;
     color: #000;
     font-family: "Gilroy", "Arial", sans-serif;
     font-weight: bold;
@@ -97,20 +98,26 @@ img {
     text-transform: uppercase;
     text-decoration: none;
     text-align: center;
-    background-color: transparent;
-    background-image: linear-gradient(to bottom,
-                      transparent 0,
-                      transparent 40%,
-                      #F0C52E 40%,
-                      #F0C52E 63%,
-                      transparent 63%,
-                      transparent 100%);
     padding: 10px 42px;
+    z-index: 1;
 }
 
-.btn:hover, .btn:focus {
-  background-image: none;
-  background-color: #F0C52E;
+.btn::before {
+  content: "";
+  width: 100%;
+  height: 8px;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  background-color: #f0c52e;
+  transform: translateY(-50%);
+  transition: height 0.2s;
+  z-index: -1;
+}
+
+.btn:hover::before, .btn:focus::before {
+  height: 100%;
+  transition: all 0.2s;
 }
 
 .btn:active {
@@ -679,6 +686,7 @@ img {
   margin: 8px 0;
   padding: 10px 0;
   text-align: center;
+  cursor: pointer;
 }
 
 .services__list {
@@ -718,11 +726,17 @@ img {
 #switch01:checked ~ .services__controls .services__control[for="switch01"],
 #switch02:checked ~ .services__controls .services__control[for="switch02"],
 #switch03:checked ~ .services__controls .services__control[for="switch03"] {
-  padding-right: 120px;
-  background-color: #000;
-  background-image: none;
   color: #F0C52E;
 }
+
+#switch01:checked ~ .services__controls .services__control[for="switch01"]::before,
+#switch02:checked ~ .services__controls .services__control[for="switch02"]::before,
+#switch03:checked ~ .services__controls .services__control[for="switch03"]::before {
+  height: 100%;
+  width: 280px;
+  background-color: #000;
+}
+
 
 .services__name {
   margin-top: 0;
@@ -1415,6 +1429,7 @@ img {
 
 .filter__btn {
   border: none;
+  background-color: #EBEBEB;
 }
 
 /* paginator */
@@ -1454,21 +1469,6 @@ img {
 
 /* popup */
 
-@keyframes appearance {
-  0%   {
-    transform: translateX(-2000px);
-  }
-  70%  {
-    transform: translateX(30px);
-  }
-  90%  {
-    transform: translateX(-10px);
-  }
-  100% {
-    transform: translateX(0);
-  }
-}
-
 @keyframes shake {
   0%, 100% {
             transform: translateX(0);
@@ -1487,7 +1487,7 @@ img {
   top: 120px;
   left: 50%;
   margin-left: -480px;
-  display: none;
+  display: block;
   width: 960px;
   height: 560px;
   padding: 0;
@@ -1495,6 +1495,8 @@ img {
   box-shadow: 10px 0 20px 0 rgba(0, 0, 0, 0.2),
               0 20px 60px 5px rgba(0, 0, 0, 0.3);
   z-index: 20;
+  opacity: 0;
+  transform: scale(0);
 }
 
 .feedback {
@@ -1512,8 +1514,10 @@ img {
 
 .map--show,
 .feedback--show {
-  display: block;
-  animation: appearance 0.8s;
+    transform: scale(1);
+    opacity: 1;
+    transition: opacity 0.8s ease-in-out,
+                transform 0.8s ease-in-out 0.1s;
 }
 
 .feedback--error {
@@ -1571,12 +1575,14 @@ img {
   border: 3px solid #F7E296;
 }
 
-/*.feedback__field:invalid {
+.feedback__field:invalid,
+.feedback__letter:invalid {
   background-color: #F6DADA;
   color: rgba(0, 0, 0, 0.4);
-}*/
+}
 
-.feedback__field:invalid:hover {
+.feedback__field:invalid:hover,
+.feedback__letter:invalid:hover {
   background-color: #EAEAEA;
 }
 
@@ -1592,6 +1598,7 @@ img {
 
 .feedback__btn {
   border: none;
+  background-color: #fff;
 }
 
 .map__close,

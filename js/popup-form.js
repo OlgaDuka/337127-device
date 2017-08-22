@@ -53,7 +53,7 @@ window.addEventListener("keydown", function(event) {
       popup.classList.remove("feedback--show");
       popup.classList.remove("feedback--error");
     }
-  if (mapPopup.classList.contains("map--show")) {
+    if (mapPopup.classList.contains("map--show")) {
       mapPopup.classList.remove("map--show");
     }
   }
