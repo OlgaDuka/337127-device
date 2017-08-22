@@ -133,8 +133,8 @@
           <a class="sort__criterions-item" href="#">По популярности</a>
         </div>
         <div class="sort__control">
-          <a class="sort__up" href="#">По возрастанию</a>
-          <a class="sort__down sort__down--active" href="#">По убыванию</a>
+          <a class="sort__btn sort__btn--up " href="#">По возрастанию</a>
+          <a class="sort__btn sort__btn--down sort__btn--active" href="#">По убыванию</a>
         </div>
       </section>
 
@@ -196,15 +196,15 @@
         </ul>
       </section>
 
-      <div class="pagination">
-        <ul class="pagination__list">
-          <li class="pagination__item pagination__item--prev"><button type="button">Назад</button></li>
-          <li class="pagination__item pagination__item-current"><button type="button">1</button></li>
-          <li class="pagination__item"><button type="button">2</button></li>
-          <li class="pagination__item"><button type="button">3</button></li>
-          <li class="pagination__item pagination__item--next"><button type="button">Вперед</button></li>
-        </ul>
-      </div>
+      <nav class="pagination">
+        <a class="pagination__item pagination__item--prev">Назад</a>
+        <div class="pagination__number">
+          <a class="pagination__item pagination__item--current">1</a>
+          <a class="pagination__item">2</a>
+          <a class="pagination__item">3</a>
+        </div>
+        <a class="pagination__item pagination__item--next">Вперед</a>
+      </nav>
 
     </div>
   </main>
