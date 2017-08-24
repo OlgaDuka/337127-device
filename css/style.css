@@ -325,6 +325,7 @@ ul {
   position: absolute;
   top: 12px;
   left: 0;
+  cursor: pointer;
 }
 
 .control__item--search::before {
@@ -358,11 +359,11 @@ ul {
   background-repeat: no-repeat;
 }
 
-.control__item:not(:first-child):hover::before {
+.control__item:hover::before {
   opacity: 0.6;
 }
 
-.control__item:not(:first-child):active::before {
+.control__item:active::before {
   opacity: 0.3;
 }
 
@@ -582,7 +583,6 @@ ul {
   border-radius: 50%;
   cursor: pointer;
   position: relative;
-  font-size: 0;
 }
 
 .slider__control::after {
@@ -1236,7 +1236,6 @@ ul {
           justify-content: space-between;
   min-width: 140px;
   height: 34px;
-  font-size: 0;
 }
 
 .social__btn {
@@ -1269,7 +1268,6 @@ ul {
   margin-left: 53px;
   background-image: url("..//img/logo-html.svg");
   background-repeat: no-repeat;
-  font-size: 0;
 }
 
 .social__btn:hover {
@@ -1475,7 +1473,6 @@ ul {
           justify-content: space-between;
   width: 40px;
   margin-left: auto;
-  font-size: 0;
 }
 
 .sort__btn {
@@ -2118,7 +2115,6 @@ ul {
   border: 0;
   border-radius: 50%;
   background-color: rgba(240, 197, 46, 0.5);
-  font-size: 0;
   cursor: pointer;
 }
 
