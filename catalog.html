@@ -4,31 +4,31 @@
   <meta charset="UTF-8">
   <title>Девайс. Каталог товаров</title>
   <link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/style.min.css">
 </head>
 <body>
   <div class="site-wrapper">
     <header class="header-main header-main--page">
       <a href="index.html" class="logo logo--header">Device</a>
       <ul class="control">
-        <li class="control__item control__search">
+        <li class="control__item control__item--search">
           <form action="https://echo.htmlacademy.ru" class="form-search">
             <label for="search" class="visually-hidden">Поиск по сайту</label>
             <input id="search" class="form-search__input" type="search" placeholder="Поиск по сайту">
             <button class="form-search__btn" type="submit">Найти</button>
           </form>
         </li>
-        <li class="control__item control__profile">
-          <a class="control__link" href="profile.html">Валентин Петухов</a>
-        </li>
-        <li class="control__item control__login">
-          <a class="control__link" href="logout.html">Выйти</a>
-        </li>
-        <li class="control__item control__compare">
-          <a class="control__link" href="#">Сравнить</a>
-        </li>
-        <li class="control__item control__backet">
-          <a class="control__link" href="#">Корзина</a>
+        <li>
+          <ul class="user-control">
+            <li>
+              <ul class="sign">
+                <li class="control__item control__item--profile"><a class="control__link" href="profile.html">Валентин Петухов</a></li>
+                <li class="control__item control__item--logout"><a class="control__link" href="logout.html">Выйти</a></li>
+              </ul>
+            </li>
+            <li class="control__item control__item--compare"><a class="control__link" href="#">Сравнить</a></li>
+            <li class="control__item control__item--backet"><a class="control__link" href="#">Корзина</a></li>
+          </ul>
         </li>
       </ul>
       <nav class="menu-main">
@@ -37,36 +37,18 @@
             <a class="menu-main__link" href="#">Каталог товаров</a>
             <div class="submenu">
               <ul class="submenu__list">
-                <li class="submenu__item">
-                  <a class="submenu__link" href="#">Виртуальная реальность</a>
-                </li>
-                <li class="submenu__item">
-                  <a class="submenu__link" href="#">Фитнес-браслеты</a>
-                </li>
-                <li class="submenu__item">
-                  <a class="submenu__link" href="#">Квадрокоптеры</a>
-                </li>
-                <li class="submenu__item">
-                  <a class="submenu__link" href="catalog.html">Моноподы для селфи</a>
-                </li>
-                <li class="submenu__item">
-                  <a class="submenu__link" href="#">Умные часы</a>
-                </li>
-                <li class="submenu__item">
-                  <a class="submenu__link" href="#">Экшн-камеры</a>
-                </li>
+                <li class="submenu__item"><a class="submenu__link" href="#">Виртуальная реальность</a></li>
+                <li class="submenu__item"><a class="submenu__link" href="#">Фитнес-браслеты</a></li>
+                <li class="submenu__item"><a class="submenu__link" href="#">Квадрокоптеры</a></li>
+                <li class="submenu__item"><a class="submenu__link" href="catalog.html">Моноподы для селфи</a></li>
+                <li class="submenu__item"><a class="submenu__link" href="#">Умные часы</a></li>
+                <li class="submenu__item"><a class="submenu__link" href="#">Экшн-камеры</a></li>
               </ul>
             </div>
           </li>
-          <li class="menu-main__item">
-            <a class="menu-main__link" href="#">Доставка</a>
-          </li>
-          <li class="menu-main__item">
-            <a class="menu-main__link" href="#">Гарантия</a>
-          </li>
-          <li class="menu-main__item">
-            <a class="menu-main__link" href="#">Контакты</a>
-          </li>
+          <li class="menu-main__item"><a class="menu-main__link" href="#">Доставка</a></li>
+          <li class="menu-main__item"><a class="menu-main__link" href="#">Гарантия</a></li>
+          <li class="menu-main__item"><a class="menu-main__link" href="#">Контакты</a></li>
         </ul>
       </nav>
       <h1 class="page-title">Моноподы для селфи</h1>
@@ -81,7 +63,7 @@
       <section class="filter">
         <h2 class="section-title">Фильтр:</h2>
         <form class="filter__form" action="https://echo.htmlacademy.ru" method="get">
-          <fieldset class="filter__cost">
+          <fieldset class="filter__group filter__group--cost">
             <legend class="filter__name">Стоимость</legend>
             <div class="filter__cost-range">
               <span class="filter__range-left"></span>
@@ -94,7 +76,7 @@
               <input type="text" id="cost-to" name="cost-to" value="5000">
             </div>
           </fieldset>
-          <fieldset class="filter__color">
+          <fieldset class="filter__group filter__group--color">
             <legend class="filter__name">Цвет</legend>
             <div class="filter__list-options">
               <input class="filter__checkbox" type="checkbox" id="black" name="black" checked>
@@ -109,7 +91,7 @@
               <label for="rose" class="filter__option">Розовый</label>
             </div>
           </fieldset>
-          <fieldset class="filter__bluetooth">
+          <fieldset class="filter__group filter__group--bluetooth">
             <legend class="filter__name">Bluetooth</legend>
             <div class="filter__list-options">
               <input class="filter__radio" type="radio" id="bt-y" name="bt" checked>
@@ -157,7 +139,7 @@
                 <img src="img/product2.jpg" width="360" height="380" alt="Профессиональная селфи-палка">
               </p>
               <div class="goods__item-info">
-                <h3 class="goods__item-title"><a href="catalog/product2.html">Профессиональная селфи-палка</a></h3>
+                <h3 class="goods__item-title"><a href="catalog/product2.html">Профессиональная<br> селфи-палка</a></h3>
                 <span class="goods__item-price">1 500 руб.</span>
               </div>
               <div class="goods__item-hover">
@@ -211,34 +193,20 @@
     <footer class="footer">
       <div class="footer__line footer__line--top">
         <a class="logo logo--footer" href="index.html">Device</a>
-        <ul class="control control--footer">
-          <li class="control__item control__login--footer">
-            <a class="control__link" href="login.html">Войти</a>
-          </li>
-          <li class="control__item control__compare--footer">
-            <a class="control__link" href="compare.html">Сравнить</a>
-          </li>
-          <li class="control__item control__backet--footer">
-            <a class="control__link" href="backet.html">Корзина</a>
-          </li>
+        <ul class="user-menu">
+          <li class="user-menu__item user-menu__item--login"><a class="user-menu__link" href="login.html">Войти</a></li>
+          <li class="user-menu__item user-menu__item--compare"><a class="user-menu__link" href="compare.html">Сравнить</a></li>
+          <li class="user-menu__item user-menu__item--backet"><a class="user-menu__link" href="backet.html">Корзина</a></li>
         </ul>
       </div>
 
       <div class="footer__line footer__line--middle">
         <span class="footer__address">г. Москва, ул. Строителей, 15</span>
-        <nav class="menu-main menu-main--footer">
-          <ul class="menu-main__list">
-            <li class="menu-main__item">
-              <a class="menu-main__link" href="delivery.html">Доставка</a>
-            </li>
-            <li class="menu-main__item">
-              <a class="menu-main__link" href="warranty.html#">Гарантия</a>
-            </li>
-            <li class="menu-main__item">
-              <a class="menu-main__link" href="contacts.html">Контакты</a>
-            </li>
+        <ul class="footer-menu">
+            <li class="footer-menu__item"><a class="footer-menu__link" href="delivery.html">Доставка</a></li>
+            <li class="footer-menu__item"><a class="footer-menu__link" href="warranty.html#">Гарантия</a></li>
+            <li class="footer-menu__item"><a class="footer-menu__link" href="contacts.html">Контакты</a></li>
           </ul>
-        </nav>
         <span class="footer__contact">Тел.: +7 (495) 495-95-95</span>
       </div>
 
@@ -247,7 +215,7 @@
         <section class="social">
           <h2 class="visually-hidden">Ссылки на социальные сети</h2>
           <a class="social__btn btn-fb" href="#">Фейсбук</a>
-          <a class="social__btn btn-vk" href="#">Вконтакте</a>
+          <a class="social__btn btn-insta" href="#">Инстаграмм</a>
           <a class="social__btn btn-tw" href="#">Твиттер</a>
         </section>
         <a class="footer__copyright" href="https://htmlacademy.ru/intensive/htmlcss">HTML Академия</a>
