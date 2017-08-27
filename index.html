@@ -7,8 +7,7 @@
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
-    <div class="site-wrapper">
-      <header class="header-main">
+    <header class="header-main">
         <a class="logo logo--header">Device</a>
         <ul class="control">
           <li class="control__item control__item--search">
@@ -55,64 +54,77 @@
           <input class="slider__radio-btn" type="radio" name="toggle" id="btn-slide1" checked>
           <input class="slider__radio-btn" type="radio" name="toggle" id="btn-slide2">
           <input class="slider__radio-btn" type="radio" name="toggle" id="btn-slide3">
+          <div class="slider__controls">
+            <label for="btn-slide1" class="slider__control" tabindex="0"><span class="visually-hidden">Палка для селфи</span></label>
+            <label for="btn-slide2" class="slider__control" tabindex="0"><span class="visually-hidden">Фитнес-браслет</span></label>
+            <label for="btn-slide3" class="slider__control" tabindex="0"><span class="visually-hidden">Квадрокоптер</span></label>
+          </div>
 
-          <div class="slide__container">
+          <div class="slider__wrapper">
             <div class="slider__item slider__item--slide1">
-              <h2 class="slide__title site-title">Делай селфи,<br> как Бен Стиллер!</h2>
-              <p class="slide__description site-text">Самая длинная палка для селфи доступна в нашем магазине.</p>
-              <p class="slide__description site-text">Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.</p>
-              <a class="slide__btn btn" href="#">Подробнее</a>
-              <table class="slide__parameters">
-                <tr class="slide__parameters-str">
-                  <td class="slide__parameter-feature">8,5 м</td>
-                  <td class="slide__parameter-feature">5 кг</td>
-                  <td class="slide__parameter-feature">Карбон</td>
-                </tr>
-                <tr class="slide__parameters-str">
-                  <td class="slide__parameter-description">Длина палки</td>
-                  <td class="slide__parameter-description">Вес палки</td>
-                  <td class="slide__parameter-description">Материал</td>
-                </tr>
-              </table>
+              <div class="slider__img">
+                <img src="img/slide1.png" alt="Палка для селфи" width="384" height="486">
+              </div>
+              <div class="slider__info">
+                <h2 class="slider__title site-title">Делай селфи,<br> как Бен Стиллер!</h2>
+                <p class="slider__description site-text">Самая длинная палка для селфи доступна в нашем магазине.</p>
+                <p class="slider__description site-text">Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.</p>
+                <a class="slider__btn btn" href="#">Подробнее</a>
+                <table class="slider__parameters">
+                  <tr class="slider__parameters-str">
+                    <td class="slider__parameter-feature">8,5 м</td>
+                    <td class="slider__parameter-feature">5 кг</td>
+                    <td class="slider__parameter-feature">Карбон</td>
+                  </tr>
+                  <tr class="slider__parameters-str">
+                    <td class="slider__parameter-description">Длина палки</td>
+                    <td class="slider__parameter-description">Вес палки</td>
+                    <td class="slider__parameter-description">Материал</td>
+                  </tr>
+                </table>
+              </div>
             </div>
 
             <div class="slider__item slider__item--slide2">
-              <h2 class="slide__title site-title">Худеем<br> правильно!</h2>
-              <p class="slide__description site-text">Мотивирующие фитнес-браслеты помогут найти в себе силы<br>
-              не пропускать занятия и соблюдать диету.</p>
-              <a class="slide__btn btn" href="#">Подробнее</a>
-              <table class="slide__parameters">
-                <tr class="slide__parameters-str">
-                  <td class="slide__parameter-feature">48 часов</td>
-                </tr>
-                <tr class="slide__parameters-str">
-                  <td class="slide__parameter-description">Без подзарядки</td>
-                </tr>
-              </table>
+              <div class="slider__img">
+                <img src="img/slide2.png" alt="Фитнес-браслет" width="345" height="485">
+              </div>
+              <div class="slider__info">
+                <h2 class="slider__title site-title">Худеем<br> правильно!</h2>
+                <p class="slider__description site-text">Мотивирующие фитнес-браслеты помогут найти в себе силы<br>
+                не пропускать занятия и соблюдать диету.</p>
+                <a class="slider__btn btn" href="#">Подробнее</a>
+                <table class="slider__parameters">
+                  <tr class="slider__parameters-str">
+                    <td class="slider__parameter-feature">48 часов</td>
+                  </tr>
+                  <tr class="slider__parameters-str">
+                    <td class="slider__parameter-description">Без подзарядки</td>
+                  </tr>
+                </table>
+            </div>
             </div>
 
             <div class="slider__item slider__item--slide3">
-              <h2 class="slide__title site-title">Порхает как бабочка, жалит как пчела!</h2>
-              <p class="slide__description site-text">Этот обычный, на первый взгляд, квадрокоптер оснащен<br>
+              <div class="slider__img">
+                <img src="img/slide3.png" alt="Квадрокоптер" width="526" height="334">
+              </div>
+              <div class="slider__info">
+              <h2 class="slider__title site-title">Порхает как бабочка, жалит как пчела!</h2>
+              <p class="slider__description site-text">Этот обычный, на первый взгляд, квадрокоптер оснащен<br>
               мощным лазером, замаскированным под стандартную камеру.</p>
-              <a class="slide__btn btn" href="#">Подробнее</a>
-              <table class="slide__parameters">
-                <tr class="slide__parameters-str">
-                  <td class="slide__parameter-feature">800 м</td>
-                  <td class="slide__parameter-feature">50 м</td>
+              <a class="slider__btn btn" href="#">Подробнее</a>
+              <table class="slider__parameters">
+                <tr class="slider__parameters-str">
+                  <td class="slider__parameter-feature">800 м</td>
+                  <td class="slider__parameter-feature">50 м</td>
                 </tr>
-                <tr class="slide__parameters-str">
-                  <td class="slide__parameter-description">Дальность полета</td>
-                  <td class="slide__parameter-description">Радиус поражения</td>
+                <tr class="slider__parameters-str">
+                  <td class="slider__parameter-description">Дальность полета</td>
+                  <td class="slider__parameter-description">Радиус поражения</td>
                 </tr>
               </table>
             </div>
-          </div>
-
-          <div class="slider__controls">
-            <label for="btn-slide1" class="slider__control" tabindex="0"><span class="visually-hidden">Первый слайд</span></label>
-            <label for="btn-slide2" class="slider__control" tabindex="0"><span class="visually-hidden">Второй слайд</span></label>
-            <label for="btn-slide3" class="slider__control" tabindex="0"><span class="visually-hidden">Третий слайд</span></label>
           </div>
         </div>
       </header>
@@ -288,7 +300,7 @@
       </div>
 
       <script src="js/popup-form.min.js"></script>
-    </div>
+
   </body>
 
 </html>
