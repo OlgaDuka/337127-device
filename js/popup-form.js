@@ -6,7 +6,7 @@ var close = document.querySelector(".feedback__close");
 var mapClose = document.querySelector(".map__close");
 var form = popup.querySelector(".feedback__form");
 var userName = popup.querySelector("[name=username]");
-var email = popup.querySelector("[name=usermail]");
+var email = popup.querySelector("[name=useremail]");
 var storage = localStorage.getItem("userName");
 
 link.addEventListener("click", function(event) {
@@ -54,7 +54,7 @@ window.addEventListener("keydown", function(event) {
       popup.classList.remove("feedback--error");
     }
     if (mapPopup.classList.contains("map--show")) {
-      mapPopup.classList.remove("map--show");
+        mapPopup.classList.remove("map--show");
     }
   }
 });
