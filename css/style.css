@@ -71,7 +71,7 @@ a:active {
   font-weight: 800;
   font-size: 47px;
   letter-spacing: 0.4px;
-  line-height: 1.2em;
+  line-height: 56px;
   word-spacing: 0.5px;
   color: #000;
 }
@@ -223,6 +223,7 @@ a:active {
   font-family: "Gilroy", "Arial", sans-serif;
   font-weight: 800;
   font-size: 48px;
+  line-height: 55px;
   letter-spacing: 0.5px;
   color: #000;
   text-transform: uppercase;
@@ -464,6 +465,7 @@ a:active {
   font-family: "Gilroy", "Arial", sans-serif;
   font-weight: 800;
   font-size: 18px;
+  line-height: 23px;
   text-transform: uppercase;
   letter-spacing: 3.5px;
 }
@@ -584,7 +586,7 @@ a:active {
 }
 
 .slider__item--slide1 .slider__img {
-  padding-top: 5px;
+  padding-top: 2px;
   padding-left: 90px;
 }
 
@@ -688,15 +690,15 @@ a:active {
 
 .slider__title {
   margin: 0;
-  padding-top: 84px;
-  margin-bottom: 18px;
+  padding-top: 81px;
+  margin-bottom: 19px;
   position: relative;
 }
 
 .slider__title::before {
   content: "";
   position: absolute;
-  top: 42px;
+  top: 39px;
   width: 100px;
   height: 7px;
   border: none;
@@ -714,11 +716,12 @@ a:active {
 }
 
 .slider__btn {
-  margin-bottom: 50px;
+  margin-bottom: 52px;
 }
 
 .slider__parameters {
-  margin-bottom: 102px;
+  margin-left: -4px;
+  margin-bottom: 111px;
 }
 
 .slider__parameter-feature {
@@ -726,21 +729,26 @@ a:active {
   font-family: "Gilroy", "Arial", sans-serif;
   font-size: 36px;
   font-weight: 400;
+  line-height: 40px;
+  letter-spacing: 0.3px;
   color: #000;
 }
 
 .slider__item--slide1 .slider__parameter-feature:nth-child(1),
 .slider__item--slide3 .slider__parameter-feature:nth-child(1) {
-  width: 152px;
+  width: 156px;
 }
 
 .slider__item--slide1 .slider__parameter-feature:nth-child(2),
 .slider__item--slide3 .slider__parameter-feature:nth-child(2) {
-  width: 137px;
+  width: 135px;
 }
 
 .slider__parameter-description {
-  height: 35px;
+  /*height: 35px;*/
+  padding: 0;
+  padding-top: 8px;
+  padding-left: 4px;
   font-family: "OpenSans", "Arial", sans-serif;
   font-size: 13px;
   font-weight: 300;
@@ -845,6 +853,7 @@ a:active {
   font-family: "Gilroy", "Arial", sans-serif;
   font-size: 18px;
   font-weight: 800;
+  line-height: 21px;
   letter-spacing: 0.2px;
 }
 
@@ -1060,15 +1069,8 @@ a:active {
           justify-content: space-between;
 }
 
-.about {
-  width: 470px;
-}
-
-.contacts {
-  width: 560px;
-}
-
 .about, .contacts {
+  width: 560px;
   min-height: 573px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1119,9 +1121,9 @@ a:active {
 
 .about__text:last-of-type {
   margin-bottom: 65px;
-  letter-spacing: 0.05px;
-  word-spacing: 0.05px;
-  max-width: 480px;
+  letter-spacing: 0;
+  word-spacing: 0.01px;
+  max-width: 475px;
 }
 
 .about__carrier-list {
@@ -1192,7 +1194,7 @@ a:active {
 
 .footer__line--top {
   margin-bottom: 32px;
-  padding-top: 60px;
+  padding-top: 59px;
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
@@ -1278,14 +1280,14 @@ a:active {
 }
 
 .footer__line--middle {
-  margin-bottom: 58px;
+  margin-bottom: 57px;
 }
 
 .footer__address,
 .footer__contact {
   width: 214px;
   color: #fff;
-  letter-spacing: 0.2px;
+  letter-spacing: 0.1px;
   word-spacing: 0.1px;
   text-decoration: none;
 }
@@ -1403,8 +1405,8 @@ a:active {
 /* Хлебные крошки - область хедера */
 
 .page-title {
-  margin-top: 50px;
-  margin-bottom: 15px;
+  margin-top: 49px;
+  margin-bottom: 14px;
   padding-left: 60px;
 }
 
@@ -1436,9 +1438,9 @@ a:active {
   content: "";
   position: absolute;
   top: 50%;
-  right: 19px;
-  width: 5px;
-  height: 5px;
+  right: 20px;
+  width: 4px;
+  height: 4px;
   border-bottom: 1px solid #000;
   border-right: 1px solid #000;
   background-color: transparent;
@@ -1521,7 +1523,7 @@ a:active {
   font-family: "Gilroy", "Arial", sans-serif;
   font-weight: 800;
   font-size: 16px;
-  line-height: normal;
+  line-height: 20px;
   text-transform: uppercase;
   letter-spacing: 3.5px;
 }
@@ -1544,7 +1546,7 @@ a:active {
 
 .column-right-wrap {
   width: 760px;
-  padding-left: 72px;
+  padding-left: 70px;
   margin-right: auto;
 }
 
@@ -1640,7 +1642,7 @@ a:active {
 
 .goods__list {
   margin: 0;
-  margin-top: 35px;
+  margin-top: 34px;
   padding: 0;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1661,6 +1663,7 @@ a:active {
 
 .goods__item {
   margin-top: 35px;
+  position: relative;
 }
 
 .goods__item-info {
@@ -1682,6 +1685,7 @@ a:active {
   font-family: "Gilroy", "Arial", sans-serif;
   font-weight: 800;
   font-size: 18px;
+  line-height: 21px;
   letter-spacing: 0.3px;
 }
 
@@ -1689,15 +1693,13 @@ a:active {
   font-family: "Gilroy", "Arial", sans-serif;
   font-weight: 400;
   font-size: 16px;
+  line-height: 21px;
 }
 
 .goods__item-image {
   margin: 0;
-  margin-bottom: 11px;
-}
-
-.goods__item {
-  position: relative;
+  line-height: 0;
+  margin-bottom: 14px;
 }
 
 .goods__item:hover .goods__item-hover {
@@ -1785,8 +1787,12 @@ a:active {
   margin-bottom: 40px;
 }
 
+.filter__group--color {
+  margin-bottom: 45px;
+}
+
 .filter__group--cost {
-  margin-top: 82px;
+  margin-top: 84px;
   height: 100px;
 }
 
@@ -1794,6 +1800,7 @@ a:active {
   font-family: "Gilroy", "Arial", sans-serif;
   font-weight: 800;
   font-size: 18px;
+  line-height: 20px;
   color: #000;
   position: relative;
 }
@@ -1953,10 +1960,6 @@ a:active {
 
 .filter__group--bluetooth {
   margin-bottom: 30px;
-}
-
-.filter__group--bluetooth .filter__name {
-  margin-top: 5px;
 }
 
 .filter__radio + .filter__option::before {
